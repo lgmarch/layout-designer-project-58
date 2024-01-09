@@ -73,18 +73,6 @@
   color: var(--white, #fff);
 }
 
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  line-height: 26px;
-  color: var(--dark, #2a2626);
-
-  margin: 0;
-  width: 1440px;
-
-  background-color: var(--white, #fff);
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -92,9 +80,28 @@ img {
   vertical-align: middle;
 }
 
-/* TODO Селектор по типу запрещены */
+/* TODO Селектор по типу запрещены (кроме img) */
 a {
   text-decoration: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 1440px;
+  min-height: 100%;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--dark, #2a2626);
+
+  background-color: var(--white, #fff);
 }
 
 /*** Header ***/
@@ -160,6 +167,10 @@ a {
 /*** Main ***/
 .index {
   position: relative;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 /* Video */
