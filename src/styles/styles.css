@@ -80,37 +80,35 @@ img {
   vertical-align: middle;
 }
 
-/* TODO Селектор по типу запрещены (кроме img) */
-a {
-  text-decoration: none;
-}
-
 html {
   height: 100%;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  width: 1440px;
-  min-height: 100%;
-
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 26px;
   color: var(--dark, #2a2626);
 
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+
   background-color: var(--white, #fff);
 }
 
 /*** Header ***/
-.header {
+.header-container {
   position: relative;
+
+  box-sizing: border-box;
+  width: 1440px;
+  margin: 0 auto;
   padding: 100px 165px;
 }
 
-.header::before {
+.header-container::before {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -126,7 +124,7 @@ body {
   z-index: -1;
 }
 
-.header::after {
+.header-container::after {
   position: absolute;
   top: 55px;
   right: -104px;
@@ -165,12 +163,19 @@ body {
 }
 
 /*** Main ***/
+.main-container {
+  flex-grow: 1;
+}
+
 .index {
   position: relative;
 }
 
-.main-container {
-  flex-grow: 1;
+.page-container {
+  box-sizing: border-box;
+
+  width: 1440px;
+  margin: 0 auto;
 }
 
 /* Video */
@@ -180,8 +185,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  padding: 100px 165px 0;
 }
 
 .video-title {
@@ -227,8 +230,8 @@ body {
   column-gap: 30px;
   row-gap: 20px;
 
-  padding: 0;
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -239,23 +242,22 @@ body {
 .navigation-item {
   box-sizing: border-box;
   width: 350px;
-  height: 323px;
-
   padding: 24px;
 
   background-color: var(--light, #f5f4f0);
 }
 
 .navigation-link {
-  display: inline-block;
+  display: block;
+  text-decoration: none;
   color: var(--dark, #2a2626);
 }
 
 .navigation-number {
   font-family: "Neucha", sans-serif;
   font-size: 64px;
-  color: var(--main-dark, #42413c);
   text-align: center;
+  color: var(--main-dark, #42413c);
 }
 
 .navigation-title {
@@ -379,8 +381,12 @@ body {
 }
 
 /* Footer */
-.footer {
-  padding: 100px 165px 111px;
+.footer-container {
+  box-sizing: border-box;
+  width: 1440px;
+
+  margin: 0 auto;
+  padding: 100px 165px;
 }
 
 .footer-newsletter {
@@ -444,5 +450,5 @@ body {
   flex-direction: column;
   align-items: center;
 
-  padding: 76px 319px 0;
+  /*padding: 76px 319px 0;*/
 }
