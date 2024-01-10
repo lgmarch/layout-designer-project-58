@@ -202,6 +202,7 @@ body {
   font-family: "Neucha", sans-serif;
   font-size: 60px;
   line-height: 72px;
+  font-weight: 400;
   color: var(--dark, #2a2626);
   text-align: center;
 
