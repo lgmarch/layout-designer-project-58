@@ -53,7 +53,7 @@
   border: 0;
   cursor: pointer;
 
-  font-family: inherit;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   color: var(--white, #fff);
   text-align: center;
@@ -67,6 +67,8 @@
 .text-description {
   column-count: 2;
   column-gap: 30px;
+
+  margin: 0;
 }
 
 .text-description-dark {
@@ -76,6 +78,7 @@
 img {
   max-width: 100%;
   height: auto;
+
   object-fit: contain;
   vertical-align: middle;
 }
@@ -87,7 +90,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 25px;
   color: var(--dark, #2a2626);
 
   display: flex;
@@ -151,6 +154,7 @@ body {
   line-height: 86px;
   color: var(--main, #fe8a02);
 
+  margin-top: 0;
   margin-bottom: 185px;
 }
 
@@ -194,6 +198,7 @@ body {
   color: var(--dark, #2a2626);
   text-align: center;
 
+  margin-top: 100px;
   margin-bottom: 27px;
 }
 
@@ -204,6 +209,7 @@ body {
 .video-description {
   color: var(--bootstrap-dark, #212529);
 
+  margin-top: 0;
   margin-bottom: 515px;
 }
 
@@ -213,6 +219,8 @@ body {
 
   width: 919px;
   height: 569px;
+
+  border-width: 0;
 
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
@@ -240,35 +248,55 @@ body {
 }
 
 .navigation-item {
-  box-sizing: border-box;
   width: 350px;
-  padding: 24px;
 
   background-color: var(--light, #f5f4f0);
 }
 
 .navigation-link {
   display: block;
+
   text-decoration: none;
   color: var(--dark, #2a2626);
+
+  padding: 24px;
 }
 
 .navigation-number {
+  display: block;
+
   font-family: "Neucha", sans-serif;
   font-size: 64px;
-  text-align: center;
+  line-height: 64px;
+  text-align: left;
   color: var(--main-dark, #42413c);
+
+  margin: 0 0 40px;
 }
 
 .navigation-title {
-  font-family: Neucha;
+  font-family: "Neucha", sans-serif;
   font-size: 34px;
-  line-height: 41px;
+  line-height: 40px;
+  font-weight: 400;
   color: var(--main, #fe8a02);
+
+  margin: 0 0 16px;
+}
+
+.navigation-title.desc {
+  font-size: 52px;
+  line-height: 62px;
+
+  margin: 0;
 }
 
 .navigation-refine {
   color: var(--white, #fff);
+}
+
+.navigation-description {
+  margin: 0;
 }
 
 /* Cards */
@@ -339,7 +367,7 @@ body {
   color: var(--dark, #2A2626);
   text-align: left;
 
-  margin-bottom: 30px;
+  margin: 0 0 30px;
 }
 
 .card-title-dark {
@@ -351,21 +379,22 @@ body {
   font-size: 34px;
   line-height: 41px;
   color: var(--Text, #2A2626);
-}
 
-.card-img {
-  margin-bottom: 100px;
+  margin: 0;
 }
 
 .card-meaning-dark {
   color: var(--white, #fff);
 }
 
-/* TODO д.б 700 */
+.card-img {
+  margin-bottom: 100px;
+}
+
 .card-lead {
   font-family: "Open Sans";
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 17px;
   color: var(--white, #fff);
   text-transform: uppercase;
@@ -394,16 +423,20 @@ body {
   justify-content: space-between;
   align-items: center;
 
+  margin-bottom: 76px;
+
   background-color: var(--main-dark, #42413c);
 }
 
 .newsletter-title {
   font-family: "Neucha", sans-serif;
   font-size: 34px;
-  line-height: 41px;
+  line-height: 40px;
+  font-weight: 400;
   color: var(--white, #fff);
   text-align: left;
 
+  margin: 0;
   padding: 55px 122px 55px 55px;
 }
 
@@ -423,15 +456,40 @@ body {
 }
 
 .form-input {
-  font-size: 13.1px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
   line-height: 21px;
+  font-weight: 400;
   color: #757575;
 
-  padding: 17px 0 18px 15px;
+  width: 400px;
+  height: 20px;
+
+  padding: 15px 0 15px 15px;
+
+  border: none;
+}
+
+.form-button {
+  width: 70px;
+  height: 50px;
 }
 
 .form-swap {
+  position: relative;
   display: flex;
+}
+
+.form-swap::before {
+  position: absolute;
+  top: 13px;
+  right: 23px;
+
+  width: 24px;
+  height: 24px;
+
+  content: "";
+  background-image: url("../img/send.svg");
 }
 
 .form-decs {
@@ -441,6 +499,8 @@ body {
 }
 
 .form-decs a {
+  font-size: 12px;
+  line-height: 19px;
   color: var(--white, #fff);
   text-decoration-line: underline;
 }
@@ -449,6 +509,24 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
-  /*padding: 76px 319px 0;*/
+.about-description {
+  font-size: 14px;
+  line-height: 22px;
+  color: #000;
+
+  margin: 0;
+}
+
+.about-description > a {
+  color: #007DC1;
+}
+
+.about-author {
+  margin-bottom: 16px;
+}
+
+.about-paper {
+  margin-bottom: 16px;
 }
