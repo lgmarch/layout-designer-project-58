@@ -107,6 +107,7 @@ body {
 
   box-sizing: border-box;
   width: 1440px;
+
   margin: 0 auto;
   padding: 100px 165px;
 }
@@ -145,20 +146,26 @@ body {
   display: flex;
   flex-direction: column;
 
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 .header-title {
   font-family: "Neucha", sans-serif;
   font-size: 72px;
   line-height: 86px;
+  font-weight: 400;
   color: var(--main, #fe8a02);
 
   margin-top: 0;
-  margin-bottom: 185px;
+  margin-bottom: 205px;
+}
+
+.header-sub {
+  margin-bottom: 8px;
 }
 
 .header-refine {
+  line-height: 72px;
   color: var(--dark, #2a2626);
 }
 
@@ -210,12 +217,12 @@ body {
   color: var(--bootstrap-dark, #212529);
 
   margin-top: 0;
-  margin-bottom: 515px;
+  margin-bottom: 510px;
 }
 
 .video-content {
   position: absolute;
-  bottom: -84px;
+  bottom: -90px;
 
   width: 919px;
   height: 569px;
@@ -364,6 +371,7 @@ body {
   font-family: "Neucha", sans-serif;
   font-size: 60px;
   line-height: 72px;
+  font-weight: 400;
   color: var(--dark, #2A2626);
   text-align: left;
 
