@@ -222,8 +222,8 @@ body {
   color: var(--dark, #2a2626);
   text-align: center;
 
-  margin-top: 100px;
-  margin-bottom: 27px;
+  margin-top: 102px;
+  margin-bottom: 29px;
 }
 
 .video-refine {
@@ -234,19 +234,19 @@ body {
   color: var(--bootstrap-dark, #212529);
 
   margin-top: 0;
-  margin-bottom: 510px;
+  margin-bottom: 506px;
 }
 
 .video-content {
   position: absolute;
-  bottom: -90px;
+  bottom: -93px;
 
   width: 919px;
   height: 569px;
 
   border-width: 0;
 
-  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.15);
 }
 
 /* Navigation */
