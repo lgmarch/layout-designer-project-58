@@ -132,14 +132,11 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-
-  content: "";
-  background-color: #f5f4f0;
-  background-image: url("../img/background.png");
-  background-size: 100% auto;
-
   opacity: 0.06;
-  z-index: -1;
+  content: "";
+  background: url("../img/background.png"), lightgray 50% / contain no-repeat;
+
+
 }
 
 .header-container::after {
@@ -160,7 +157,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  padding-bottom: 30px;
+  padding-bottom: 21px;
 }
 
 .header-title {
@@ -171,20 +168,22 @@ body {
   color: var(--main, #fe8a02);
 
   margin-top: 0;
-  margin-bottom: 200px;
+  margin-bottom: 206px;
 }
 
 .header-sub {
+  display: block;
   margin-bottom: 8px;
 }
 
 .header-refine {
+  display: block;
   line-height: 72px;
   color: var(--dark, #2a2626);
 }
 
 .header-link {
-  margin: 10px 0 0 570px;
+  margin: 5px 0 0 570px;
 }
 
 /*** Main ***/
