@@ -124,6 +124,8 @@ body {
 
   margin: 0 auto;
   padding: 100px 165px;
+
+  background-color: var(--light, #f5f4f0);
 }
 
 .header-container::before {
@@ -132,11 +134,12 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: 0.06;
+
   content: "";
-  background: url("../img/background.png"), lightgray 50% / contain no-repeat;
-
-
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 10%;
 }
 
 .header-container::after {
