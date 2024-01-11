@@ -330,7 +330,7 @@ body {
   background-image: url("../img/background.png");
   background-size: 100% auto;
 
-  opacity: 9%;
+  opacity: 0.06;
 }
 
 .card-list {
@@ -405,6 +405,9 @@ body {
 
 .card-img {
   margin-bottom: 100px;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.15);
+
+  z-index: 1;
 }
 
 .card-lead {
