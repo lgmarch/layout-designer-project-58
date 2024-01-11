@@ -68,7 +68,7 @@
   display: flex;
   flex-wrap: wrap;
   row-gap: 30px;
-  column-gap: 30px;
+  column-gap: 29px;
 }
 
 .description-text {
@@ -80,6 +80,12 @@
 
 .description-text-dark {
   color: var(--white, #fff);
+}
+
+.description-quote {
+  display: block;
+  font: inherit;
+  margin-top: 14px;
 }
 
 img {
@@ -98,6 +104,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 25px;
+  font-weight: 400;
   color: var(--dark, #2a2626);
 
   display: flex;
