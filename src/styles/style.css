@@ -64,14 +64,23 @@
   background-color: var(--main, #fe8a02);
 }
 
-.text-description {
-  column-count: 2;
+.description-swap {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
   column-gap: 30px;
+}
 
+.description-text {
+  flex-grow: 1;
+
+  text-align: justify;
+
+  width: 540px;
   margin: 0;
 }
 
-.text-description-dark {
+.description-text-dark {
   color: var(--white, #fff);
 }
 
@@ -124,7 +133,7 @@ body {
   background-image: url("../img/background.png");
   background-size: 100% auto;
 
-  opacity: 9%;
+  opacity: 0.06;
   z-index: -1;
 }
 
@@ -157,7 +166,7 @@ body {
   color: var(--main, #fe8a02);
 
   margin-top: 0;
-  margin-bottom: 205px;
+  margin-bottom: 200px;
 }
 
 .header-sub {
@@ -170,7 +179,7 @@ body {
 }
 
 .header-link {
-  margin-left: 570px;
+  margin: 27px 0 0 570px;
 }
 
 /*** Main ***/
