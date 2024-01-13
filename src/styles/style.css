@@ -234,12 +234,12 @@ body {
   color: var(--bootstrap-dark, #212529);
 
   margin-top: 0;
-  margin-bottom: 515px;
+  margin-bottom: 500px;
 }
 
 .video-content {
   position: absolute;
-  bottom: -84px;
+  bottom: -100px;
 
   width: 919px;
   height: 569px;
