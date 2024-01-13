@@ -116,19 +116,11 @@ body {
 }
 
 /*** Header ***/
-.header-container {
-  position: relative;
-
-  box-sizing: border-box;
-  width: 1440px;
-
-  margin: 0 auto;
-  padding: 100px 165px;
-
+.header {
   background-color: var(--light, #f5f4f0);
 }
 
-.header-container::before {
+.header::before {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -138,8 +130,18 @@ body {
   content: "";
   background-image: url("../img/background.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 10%;
+  background-size: auto;
+  opacity: 0.06;
+}
+
+.header-container {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 1440px;
+
+  margin: 0 auto;
+  padding: 100px 165px;
 }
 
 .header-container::after {
@@ -198,20 +200,19 @@ body {
   position: relative;
 }
 
-.page-container {
-  box-sizing: border-box;
-
-  width: 1440px;
-  margin: 0 auto;
-}
-
 /* Video */
-.index-video {
+.video-index {
   position: relative;
+  box-sizing: border-box;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  width: 1440px;
+
+  margin: 0 auto;
+  padding: 100px 165px;
 }
 
 .video-title {
@@ -222,7 +223,7 @@ body {
   color: var(--dark, #2a2626);
   text-align: center;
 
-  margin-top: 100px;
+  margin-top: 0;
   margin-bottom: 30px;
 }
 
@@ -234,7 +235,7 @@ body {
   color: var(--bootstrap-dark, #212529);
 
   margin-top: 0;
-  margin-bottom: 500px;
+  margin-bottom: 400px;
 }
 
 .video-content {
@@ -251,9 +252,16 @@ body {
 
 /* Navigation */
 .navigation {
-  padding: 200px 165px 100px;
-
   background-color: var(--main-dark, #42413c);
+}
+
+.navigation-container {
+  box-sizing: border-box;
+
+  width: 1440px;
+
+  margin: 0 auto;
+  padding: 200px 165px 100px;
 }
 
 .navigation-list {
@@ -326,6 +334,8 @@ body {
 /* Cards */
 .cards {
   position: relative;
+
+  background-color: var(--light, #f5f4f0);
 }
 
 .cards::before {
@@ -337,7 +347,8 @@ body {
 
   content: "";
   background-image: url("../img/background.png");
-  background-size: 100% auto;
+  background-size: auto;
+  background-repeat: repeat;
 
   opacity: 0.06;
 }
@@ -348,10 +359,18 @@ body {
   list-style: none;
 }
 
-.card-item {
-  padding: 100px 165px;
+.card-container {
+  box-sizing: border-box;
 
-  background-color: var(--light, #f5f4f0);
+  margin: 0 auto;
+}
+
+.card-item {
+  box-sizing: border-box;
+
+  width: 1440px;
+  margin: 0 auto;
+  padding: 100px 165px;
 }
 
 .card-item-dark {

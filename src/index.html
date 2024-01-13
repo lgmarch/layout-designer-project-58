@@ -41,8 +41,8 @@
     </header>
 
     <main class="main-container index">
-      <div class="page-container">
-        <article class="index-video">
+      <div class="video-container">
+        <article class="video-index">
           <h2 class="video-title">
             Что же это такое,<br /><span class="video-refine"
               >когнитивные искажения?</span
@@ -59,8 +59,10 @@
             allowfullscreen
           ></iframe>
         </article>
+      </div>
 
-        <nav class="navigation" id="navigation">
+      <nav class="navigation" id="navigation">
+        <div class="navigation-container">
           <ul class="navigation-list">
             <li class="navigation-item">
               <h2 class="navigation-title desc">
@@ -120,10 +122,12 @@
               </a>
             </li>
           </ul>
-        </nav>
+        </div>
+      </nav>
 
-        <article class="cards">
-          <ul class="card-list">
+      <article class="cards">
+        <ul class="card-list">
+          <div class="card-container">
             <li class="card-item" id="ikea-effect">
               <div class="card-wrap card-wrap-right">
                 <div class="card-desc">
@@ -158,46 +162,48 @@
                 </p>
               </div>
             </li>
+          </div>
 
-            <li class="card-item card-item-dark" id="premature-optimization">
-              <div class="card-container">
-                <div class="card-wrap">
-                  <div class="card-desc">
-                    <span class="card-subtitle card-subtitle-dark"
-                      >Когнитивные искажения</span
-                    >
-                    <h2 class="card-title card-title-dark">
-                      Преждевременная оптимизация
-                    </h2>
-                    <p class="card-meaning card-meaning-dark">
-                      Вы оптимизируете что-то задолго до того, как в этом
-                      появляется необходимость.
-                    </p>
-                  </div>
-                  <img
-                    class="card-img"
-                    src="./img/2.png"
-                    width="578"
-                    height="434"
-                    alt="Преждевременная оптимизация."
-                  />
-                </div>
-                <h3 class="card-lead card-lead-dark">Как проявляется</h3>
-                <div class="description-swap">
-                  <p class="description-text description-text-dark">
-                    Если вы добавите аэродинамический спойлер к своему старому
-                    автомобилю вместо ремонта мотора, то автомобиль не станет
-                    быстрее.
-                  </p>
-                  <p class="description-text description-text-dark">
-                    Отличный пример: писать максимально подтюненный и
-                    высокопроизводительный код для всего лишь экспериментального
-                    проекта.
+          <div class="card-container card-item-dark">
+            <li class="card-item" id="premature-optimization">
+              <div class="card-wrap">
+                <div class="card-desc">
+                  <span class="card-subtitle card-subtitle-dark"
+                    >Когнитивные искажения</span
+                  >
+                  <h2 class="card-title card-title-dark">
+                    Преждевременная оптимизация
+                  </h2>
+                  <p class="card-meaning card-meaning-dark">
+                    Вы оптимизируете что-то задолго до того, как в этом
+                    появляется необходимость.
                   </p>
                 </div>
+                <img
+                  class="card-img"
+                  src="./img/2.png"
+                  width="578"
+                  height="434"
+                  alt="Преждевременная оптимизация."
+                />
+              </div>
+              <h3 class="card-lead card-lead-dark">Как проявляется</h3>
+              <div class="description-swap">
+                <p class="description-text description-text-dark">
+                  Если вы добавите аэродинамический спойлер к своему старому
+                  автомобилю вместо ремонта мотора, то автомобиль не станет
+                  быстрее.
+                </p>
+                <p class="description-text description-text-dark">
+                  Отличный пример: писать максимально подтюненный и
+                  высокопроизводительный код для всего лишь экспериментального
+                  проекта.
+                </p>
               </div>
             </li>
+          </div>
 
+          <div class="card-container">
             <li class="card-item" id="distortion-of-novelty">
               <div class="card-wrap card-wrap-right">
                 <div class="card-desc">
@@ -231,8 +237,10 @@
                 </p>
               </div>
             </li>
+          </div>
 
-            <li class="card-item card-item-dark" id="hyperbolic-depreciation">
+          <div class="card-container card-item-dark">
+            <li class="card-item" id="hyperbolic-depreciation">
               <div class="card-wrap">
                 <div class="card-desc">
                   <span class="card-subtitle">Когнитивные искажения</span>
@@ -267,7 +275,9 @@
                 </p>
               </div>
             </li>
+          </div>
 
+          <div class="card-container">
             <li class="card-item" id="errors-in-planning">
               <div class="card-wrap card-wrap-right">
                 <div class="card-desc card-desc-right">
@@ -304,9 +314,9 @@
                 </p>
               </div>
             </li>
-          </ul>
-        </article>
-      </div>
+          </div>
+        </ul>
+      </article>
     </main>
 
     <footer class="footer">
